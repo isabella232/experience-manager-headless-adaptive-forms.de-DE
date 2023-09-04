@@ -1,25 +1,25 @@
 ---
-title: Übersicht über AEM Headless-adaptive Formulare
-description: Übersicht über AEM adaptiven Formulare ohne Kopfzeilenfunktion.
+title: Adaptive Headless-Formulare von AEM – Übersicht
+description: Übersicht über adaptive Headless-Formulare von AEM.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Versionshinweise
 
-Willkommen bei der frühzeitigen Version von adaptiven Formularen ohne Experience Manager Headless. Lesen Sie weiter, um Ressourcen und Anweisungen zu erhalten, um zu beginnen und die Version optimal zu nutzen.
+Willkommen bei der Early-Adopter-Version von adaptiven Headless-Formularen von Experience Manager. Lesen Sie weiter, um Ressourcen und Anweisungen für den Einstieg zu erhalten und das Beste aus der Version zu machen.
 
-Sie können adaptive Adobe Experience Manager Headless-Formulare verwenden, um Formularanwendungen mithilfe von Frontend-UI-Frameworks wie React, Angular und mehr zu erstellen und das Adaptive Forms Web SDK für Funktionen wie Statusverwaltung, Validierung und Integrationen mit verschiedenen anderen Touchpoints zu verwenden.
+Sie können adaptive Headless-Formulare von Adobe Experience Manager verwenden, um Formularanwendungen mithilfe von Frontend-UI-Frameworks wie React, Angular und mehr zu erstellen, und das Adaptive Forms Web SDK für Funktionen wie Statusverwaltung, Validierung und Integrationen mit verschiedenen anderen Touchpoints verwenden.
 
-Die frühe Adopter-Version bietet Ihnen Zugriff auf die Verwendung von Headless-adaptiven Formularen in einer [lokale Entwicklungsumgebung](setup-development-environment.md). Sie können die lokale Entwicklungsumgebung verwenden, um Headless-adaptive Formulare zu erstellen und zu testen.
+Die Early-Adopter-Version bietet Ihnen Zugriff auf die Verwendung von adaptiven Headless-Formularen in einer [lokalen Entwicklungsumgebung](setup-development-environment.md). Sie können die lokale Entwicklungsumgebung verwenden, um adaptive Headless-Formulare zu erstellen und zu testen.
 
-Adaptive Headless-Formulare werden laufend verbessert. Besuchen Sie diese Seite regelmäßig, um über die neuesten Entwicklungen auf dem Laufenden zu bleiben. Auf dieser Seite finden Sie Informationen zu frühzeitigem Zugriff, aktuellen Versionen, neuen Funktionen, Verbesserungen, Fehlerbehebungen, veralteten Funktionen, speziellen Anweisungen und künftigen Plänen für Änderungen.
+Adaptive Headless-Formulare werden laufend verbessert. Besuchen Sie diese Seite regelmäßig, um über die neuesten Entwicklungen auf dem Laufenden zu bleiben. Auf dieser Seite finden Sie Informationen zu frühzeitiger Verfügbarkeit, neuesten Versionen, neuen Funktionen, Verbesserungen, Fehlerbehebungen, veralteten Funktionen, speziellen Anweisungen und zukünftigen Änderungsplänen.
 
 <!-- 
 
@@ -40,45 +40,45 @@ Adaptive Headless-Formulare werden laufend verbessert. Besuchen Sie diese Seite 
 
 <!-- ### React Renderer component -->
 
-## In der frühen Adoptionsversion verfügbare Artefakte
+## Artefakte sind in der Early-Adopter-Version verfügbar
 
-In der Journey, um Ihnen adaptive Adobe Experience Manager Headless-Formulare bereitzustellen, sind die folgenden Artefakte in der frühen Advertising-Version verfügbar:
+Im Rahmen unseres Bestrebens, Ihnen adaptive Headless-Formulare von Adobe Experience Manager zur Verfügung zu stellen, sind die folgenden Artefakte in der Early-Adopter-Version verfügbar:
 
-### AEM FORMS AS A CLOUD SERVICE SDK
+### AEM Forms as a Cloud Service SDK
 
-AEM Forms as a Cloud Service SDK zum Erstellen, Speichern und Abrufen von Headless-adaptiven Formularen. Es hilft auch bei der Bereitstellung von Diensten zum Vorausfüllen, serverseitigen Validieren von Regeln und Senden für adaptive Headless-Formulare.
+AEM Forms as a Cloud Service SDK hilft Ihnen beim Erstellen, Speichern und Abrufen von adaptiven Headless-Formularen. Es hilft auch bei der Bereitstellung von Vorbefüllung, Server-seitiger Regelvalidierung und Übermittlungsdiensten für adaptive Headless-Formulare.
 
 ### Forms Web SDK
 
-Das Forms Web SDK bietet die APIs zum Validieren von Einschränkungen, die auf verschiedene Formularfelder angewendet werden, und zum Verbinden der JSON-Formularstruktur mit dem UI-Framework. Es bietet außerdem React Renderer-&#x200B; für Headless-adaptive Formulare, um ein Headless-adaptives Formular in Ihre Anwendung zu integrieren. Die folgenden Komponenten des Web SDK sind verfügbar:
+Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, die auf verschiedene Felder eines Formulars angewendet werden, sowie Hooks, um die JSON-Struktur des Formulars mit dem UI-Framework zu verbinden. Es bietet außerdem React Renderer für adaptive Headless-Formulare, um die Integration eines adaptiven Headless-Formulars in Ihre Anwendung zu unterstützen. Die folgenden Komponenten des Web SDK sind verfügbar:
 
-* **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
-* **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
+* **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
+* **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
 * **[@aemforms/af-core](https://www.npmjs.com/package/@aemforms/af-core)**
 
 <!-- npm i --save @aemforms/af-react-components @aemforms/af-react-renderer @aemforms/af-core -->
 
 #### Storybook
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) bietet einen Überblick über die verschiedenen Komponenten von Headless adaptiven Formularen. Sie enthält außerdem eine Liste aller unterstützten Komponenten, deren zugehörige Eigenschaften und Einschränkungen.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) bietet einen Überblick über verschiedene Komponenten von adaptiven Headless-Formularen. Außerdem wird eine Liste aller unterstützten Komponenten einschließlich ihrer Eigenschaften und Einschränkungen bereitgestellt.
 
-### Forms-Kernkomponente
+### Kernkomponenten von Formularen
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-Kernkomponenten sind eine Reihe standardisierter WCM-Komponenten (Web Content Management), mit denen Sie die Entwicklungszeit verkürzen und die Wartungskosten Ihrer Formulare reduzieren können. Die Forms-Container-Komponente ist eine Kernkomponente. Dies hilft Ihnen beim Einbetten und Rendern einer JSON-Struktur des Headless-adaptiven Formulars im adaptiven Forms-Editor des as a Cloud Service Forms SDK.
+Kernkomponenten sind eine Reihe standardisierter Web Content Management(WCM)-Komponenten, um die Entwicklungszeit zu verkürzen und die Wartungskosten Ihrer Formulare zu senken. Die Komponente „Formular-Container“ ist eine Kernkomponente. Sie hilft Ihnen, eine JSON-Struktur eines adaptiven Headless-Formulars in den Editor für adaptive Formulare des Forms as a Cloud Service SDK einzubetten und zu rendern.
 
-### Adaptive Forms V2-Spezifikationen
+### Spezifikationen für „Adaptive Formulare V2“
 
-Die Spezifikation für Headless-adaptive Formulare bietet detaillierte Informationen zu allen Komponenten, Begrenzungen und Methoden, die zum Definieren von Headless-adaptiven Formularen verfügbar sind. Die Spezifikation ist verfügbar unter [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) Format.
+Die Spezifikation für adaptive Headless-Formulare bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die zum Definieren adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf)-Format verfügbar.
 
 ### HTTP- und JS-API
 
-[HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) ermöglichen es Ihnen, den Sendestatus von Headless-Formularen aufzulisten, abzurufen, zu validieren, zu senden und zu verfolgen. [JS-APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) hilft Ihnen bei der Verwendung von Headless-adaptiven Formularen mit einem beliebigen JavaScript-basierten UI-Framework.
+[HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) ermöglichen Ihnen das Auflisten, Abrufen, Validieren, Senden und Verfolgen des Übermittlungsstatus von Headless-Formularen. [JS-APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helfen Ihnen, adaptive Headless-Formulare mit jedem JavaScript-basierten UI-Framework zu verwenden.
 
 ### Visual Studio Code-Erweiterung
 
-[Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) um eine gültige JSON-Struktur zu erstellen. Es bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten einer JSON-Struktur.
+Die [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) hilft beim Erstellen einer gültigen JSON-Struktur. Sie bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten einer JSON-Struktur.
 
 <!-- ## What's next
 

@@ -1,38 +1,38 @@
 ---
-user-guide-title: Adaptive Adobe Experience Manager Headless-Formulare
-breadcrumb-title: AEM Headless-adaptive Formulare
-user-guide-description: Dokumentation für adaptive Adobe Experience Manager Headless-Formulare
+user-guide-title: Adaptive Headless-Formulare von Adobe Experience Manager
+breadcrumb-title: Adaptive Headless-Formulare von AEM
+user-guide-description: Dokumentation zu adaptiven Headless-Formularen von Adobe Experience Manager
 feature: Adaptive Forms
 role: Developer
 hide: false
 source-git-commit: b1e62aa73d5f442c8d025202f3bad31c0f82a113
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 
-# Adaptive Adobe Experience Manager Headless-Formulare {#using}
+# Adaptive Headless-Formulare von Adobe Experience Manager {#using}
 
 + [Übersicht](overview.md)
 + [Architektur](architecture.md)
 + Schnelleinrichtung {#quick-setup}
-   + [Aktivieren von Headless Adaptive Forms auf AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
-   + [Aktivieren von Headless Adaptive Forms auf AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
+   + [Aktivieren von adaptiven Headless-Formularen in AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
+   + [Aktivieren von adaptiven Headless-Formularen in AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
-   + [Forms mit Kernkomponenten und Headless Adaptives Forms auf AEM Forms as a Cloud Service integrieren](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
-   + [Forms mit Kernkomponenten und Headless-Adaptives Forms auf AEM 6.5 Forms integrieren](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
-+ Erste Schritte mit dem Starter Kit{#get-started}
-   + [Erstellen und Veröffentlichen eines Headless-Formulars mit dem Starter Kit](create-and-publish-a-headless-form.md)
+   + [Erstellen von ansprechenden Formularen mit Kernkomponenten und adaptiven Headless-Formularen in AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
+   + [Erstellen von ansprechenden Formularen mit Kernkomponenten und adaptiven Headless-Formularen in AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
++ Erste Schritte mit dem Starter-Kit{#get-started}
+   + [Erstellen und Veröffentlichen eines Headless-Formulars mit dem Starter-Kit](create-and-publish-a-headless-form.md)
    + [Verwenden einer benutzerdefinierten React-Bibliothek zum Rendern eines Headless-Formulars](use-google-material-ui-react-components-to-render-a-headless-form.md)
-+ Erstellen von Headless-adaptiven Formularen {#authoring-headless-adaptive-forms}
-   + [Erstellen eines Headless-adaptiven Formulars mit dem adaptiven Forms-Editor](create-a-headless-adaptive-form.md)
++ Erstellen eines adaptiven Headless-Formulars {#authoring-headless-adaptive-forms}
+   + [Erstellen eines adaptiven Headless-Formulars mit dem Editor für adaptive Formulare](create-a-headless-adaptive-form.md)
 + Entwicklerreferenz {#developer-reference}
-   + [Headless-APIs für adaptive Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
+   + [API für adaptive Headless-Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Häufig gestellte Fragen ](faq.md)
 + [Fehlerbehebung](troubleshooting.md)
-+ [Microsoft Visual Studio Code-Erweiterung für Headless-adaptive Formulare](visual-studio-code-extension-for-headless-adaptive-forms.md)
++ [Microsoft Visual Studio Code-Erweiterung für adaptive Headless-Formulare](visual-studio-code-extension-for-headless-adaptive-forms.md)
 
 
 
