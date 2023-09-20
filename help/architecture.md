@@ -1,6 +1,6 @@
 ---
-title: Headless-Architektur für adaptive Formulare
-description: Erfahren Sie mehr über die Architektur von AEM Forms Headless Adaptive Forms und wie Sie damit schnell Formulare für verschiedene Plattformen erstellen können. Dieser Artikel bietet Einblicke in die Funktionsweise von Headless Adaptive Forms und deren Integration in verschiedene Anwendungen, um den Formularerstellungsprozess zu vereinfachen.
+title: Architektur von adaptiven Headless-Formularen
+description: Erfahren Sie mehr über die Architektur von adaptiven Headless-Formularen in AEM und wie Sie damit schnell Formulare für verschiedene Plattformen erstellen können. Dieser Artikel bietet Einblicke in die Funktionsweise von adaptiven Headless-Formularen und deren Integration in verschiedene Anwendungen, um den Formularerstellungsprozess zu vereinfachen.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -10,24 +10,24 @@ keywords: Headless, adaptives Formular, Architektur
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Wie funktioniert das adaptive Formular &quot;Headless&quot;?
+# Wie funktionieren adaptive Headless-Formulare?
 
-Ein Headless-adaptives Formular ist im Wesentlichen eine JSON-Struktur (Schema), die aus Formularfeldern (Textfeld, Auswahl und viele weitere Felder) und entsprechenden Regeln (Bedingungslogik) besteht, um dem Formular interaktives Verhalten hinzuzufügen. Sie können REST-APIs in Ihrer Anwendung oder Website verwenden, um die gehostete JSON-Struktur anzufordern und die JSON-Struktur nativ als Formular in Ihrer App oder Website zu rendern. Ein einzelnes Headless-adaptives Formular kann mehrere Webseiten und Anwendungen bedienen, ohne App- oder Website-spezifische Änderungen daran vorzunehmen.
+Ein adaptives Headless-Formular ist im Wesentlichen eine JSON-Struktur (Schema), die aus Formularfeldern (Textfeld, Auswahl und viele weitere) und entsprechenden Regeln (Bedingungslogik) besteht, um dem Formular interaktives Verhalten hinzuzufügen. Sie können REST-APIs in Ihrer Anwendung oder Website verwenden, um die gehostete JSON-Struktur anzufordern und die JSON-Struktur nativ als Formular in Ihrer App oder Website zu rendern. Ein einzelnes adaptives Headless-Formular kann mehrere Web-Seiten und Anwendungen bedienen, ohne dass App- oder Website-spezifische Änderungen daran vorgenommen werden müssen.
 
-![Funktionsweise des adaptiven Formulars ohne Kopfzeilen](/help/assets/how-headless-adaprive-forms-work.png)
+![Funktionsweise von adaptiven Headless-Formularen](/help/assets/how-headless-adaprive-forms-work.png)
 
 ## Architektur {#architecture}
 
-Eine typische Headless-Architektur für adaptive Formulare bildet einen Adobe Experience Manager Forms-Server, auf Adobe Experience Manager Forms-Server gehostete Headless-adaptive Formulare sowie Ihre Frontend-Apps (Website, mobile Anwendung, JavaScript-Apps, Chat-Anwendungen und mehr) für kanalspezifische Formularwiedergaben.
+Eine typische Architektur für adaptive Headless-Formulare besteht aus einem Adobe Experience Manager Forms-Server, auf diesem Adobe Experience Manager Forms-Server gehosteten adaptiven Headless-Formularen sowie Ihren Frontend-Apps (Website, Mobile App, JavaScript-Apps, Chat-Anwendungen und mehr) für kanalspezifische Formularwiedergaben.
 
-Die typische Architektur einer Bereitstellung von Headless-adaptiven Formularen sieht wie folgt aus:
+Die typische Architektur einer Bereitstellung von adaptiven Headless-Formularen sieht wie folgt aus:
 
 ![Architektur](/help/assets/headless-af-architecture.png)
 
@@ -39,55 +39,55 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 ![Architecture](/help/assets/headless-af-architecture.png) -->
 
-### Komponente einer Implementierung von Headless-adaptiven Formularen
+### Komponenten einer Implementierung von adaptiven Headless-Formularen
 
-**Adobe Experience Manager Server**: Neben der Bereitstellung als Host für Headless-adaptive Formulare bietet Adobe Experience Manager die folgenden Backend-Funktionen:
+**Adobe Experience Manager-Server**: Neben der Bereitstellung als Host für adaptive Headless-Formulare bietet Adobe Experience Manager die folgenden Backend-Funktionen:
 
-* RESTful-APIs zum Auflisten, Abrufen, Vorausfüllen, Validieren, Senden und Verfolgen des Sendestatus von Headless-Formularen.
-* Visual Editor, um einfach ein Headless-adaptives Formular zu entwickeln.
-* Forms-Datenmodell zum Empfangen oder Senden von Daten an verschiedene Datenquellen.
+* RESTful-APIs zum Auflisten, Abrufen, Vorausfüllen, Validieren, Senden und Verfolgen des Übermittlungsstatus von Headless-Formularen.
+* Visueller Editor, um adaptive Headless-Formulare einfach zu entwickeln.
+* Formulardatenmodell zum Empfangen oder Senden von Daten an verschiedene Datenquellen.
 * Workflow-Engine zur Automatisierung komplexer Aufgaben.
 
-**Headless-adaptive Formulare**: Ein Headless-adaptives Formular wird als JSON-Datei dargestellt. Die JSON-Struktur definiert Komponenten, Begrenzungen und die Struktur eines Formulars.
+**Adaptive Headless-Formulare**: Ein adaptives Headless-Formular wird als JSON-Datei dargestellt. Die JSON-Struktur definiert Komponenten, Einschränkungen und die Struktur eines Formulars.
 
-**Frontend-Apps**: Frontend-Apps wie SPA (Einzelseiten-Apps), mobile Apps, JavaScript-Apps, verwenden Headless-adaptive Formulare (die JSON-Formulardarstellung) und rendern das Formular auf einem Client. Sie können die React-Renderer-Komponente, die mit Headless-adaptiven Formularen geliefert wird, verwenden, um ein adaptives Formular zu rendern oder Ihre eigene benutzerdefinierte Komponente zu erstellen, um native adaptive Formulare ohne Kopfzeilenfunktion wiederzugeben.
+**Frontend-Apps**: Frontend-Apps wie SPA (Einzelseitenanwendungen), Mobile Apps und JavaScript-Apps verwenden adaptive Headless-Formulare (die JSON-Formulardarstellung) und rendern das Formular auf einem Client. Sie können die React-Renderer-Komponente, die mit adaptiven Headless-Formularen geliefert wird, verwenden, um ein adaptives Formular zu rendern oder Ihre eigene benutzerdefinierte Komponente zu erstellen, um adaptive Headless-Formulare nativ zu rendern.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
 
 
-### Entwicklertools
+### Entwickler-Tools
 
-In einem typischen Entwicklungszyklus beginnen Sie mit dem Erstellen und Hosten von Headless-adaptiven Formularen auf Adobe Experience Manager Forms Server. Im zweiten Schritt ordnen Sie die Komponenten der Benutzeroberfläche zu oder verwenden Sie eine Bibliothek mit Komponenten der öffentlichen Benutzeroberfläche, z. B. die Google-Material-Benutzeroberfläche oder die Chakra-Benutzeroberfläche, um Formulare zu gestalten. Im letzten Schritt rufen Sie Headless-adaptive Formulare in Ihrer Anwendung ab und zeigen sie an (Website, mobile Anwendung, JavaScript-Apps, Chat-Anwendungen oder viele andere Oberflächen).
+In einem typischen Entwicklungszyklus beginnen Sie mit dem Erstellen und Hosten von adaptiven Headless-Formularen auf dem Adobe Experience Manager Forms-Server. Im zweiten Schritt ordnen Sie Ihre Benutzeroberflächenkomponenten zu oder verwenden eine öffentliche Bibliothek für Benutzeroberflächenkomponenten, wie die Google Material-Benutzeroberfläche oder die Chakra-Benutzeroberfläche, um Ihre Formulare zu gestalten. Im letzten Schritt rufen Sie adaptive Headless-Formulare in Ihrer Anwendung ab und zeigen sie an (Website, Mobile App, JavaScript-Apps, Chat-Anwendungen und viele andere Oberflächen).
 
 Mit den folgenden Tools können Sie adaptive Headless-Formulare erstellen und in Ihre Anwendungen integrieren:
 
-**Forms Web SDK (Client-seitige Laufzeit)**: Das Forms Web SDK ist eine clientseitige JavaScript-Bibliothek. Dadurch können Sie clientseitige Validierungen auf Formularfelder anwenden, den Status des Formulars beibehalten und das Formular mit einer UI-Ebene oder einer gerenderten Komponente für adaptive Formulare verbinden. Dadurch können Kunden Einschränkungen überprüfen, die auf verschiedene Felder eines Formulars angewendet werden, und Hoks zum Verbinden der JSON-Struktur des Formulars mit dem UI-Framework nutzen. Das Forms Web SDK umfasst die folgenden Komponenten:
+**Forms Web SDK (Client-seitige Laufzeit)**: Das Forms Web SDK ist eine Client-seitige JavaScript-Bibliothek. Damit können Sie Client-seitige Validierungen auf Formularfelder anwenden, den Status des Formulars beibehalten und das Formular mit einer UI-Ebene oder einer gerenderten Komponente für adaptive Formulare verbinden. Es ermöglicht den Kundinnen und Kunden die Validierung von Einschränkungen, die auf verschiedene Felder eines Formulars angewendet werden, und bietet Hooks zur Verbindung der JSON-Struktur des Formulars mit dem UI-Framework. Das Forms Web SDK umfasst die folgenden Komponenten:
 
-* **Business Rule Prozessor**: Der Geschäftsregelprozessor akzeptiert die JSON-Struktur der Formulare als Eingabe, verwaltet den Status der Formularfelder, führt Regeln und Ereignishandler aus, die in der JSON vorhanden sind.
-* **React-Bindemittel**: Stellt Hooks über den Controller bereit, um den Status zu Formularkomponenten hinzuzufügen. Dies ist auch beim Vorausfüllen eines Formulars hilfreich.
-* **Komponentenbibliothek**: Es stellt React-Spectrum-Komponenten bereit und verwendet Hooks im React-Binder-Modul, um diesen Komponenten Status hinzuzufügen.
+* **Verfahrensregelprozessor**: Der Verfahrensregelprozessor akzeptiert die JSON-Struktur der Formulare als Eingabe, verwaltet den Status der Formularfelder und führt Regeln und Ereignis-Handler aus, die in der JSON vorhanden sind.
+* **React-Binder**: Stellt Hooks über den Controller bereit, um den Status zu Formularkomponenten hinzuzufügen. Er ist auch beim Vorausfüllen eines Formulars hilfreich.
+* **Komponentenbibliothek**: Sie stellt React-Spectrum-Komponenten bereit und verwendet Hooks im React-Binder-Modul, um diesen Komponenten einen Status hinzuzufügen.
 
-Das Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, die auf verschiedene Formularfelder angewendet werden. Außerdem stellt es auch Haken bereit, um Headless-adaptive Formulare mit dem UI-Framework zu verbinden. Es bietet außerdem React Renderer-&#x200B; für Headless-adaptive Formulare, um ein Headless-adaptives Formular in Ihre Anwendung zu integrieren. Die folgenden Komponenten des Web SDK sind verfügbar:
+Das Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, die auf verschiedene Formularfelder angewendet werden. Außerdem bietet es auch Hooks, um adaptive Headless-Formulare mit dem UI-Framework zu verbinden. Es bietet außerdem React Renderer für adaptive Headless-Formulare, um die Integration eines adaptiven Headless-Formulars in Ihre Anwendung zu unterstützen. Die folgenden Komponenten des Web SDK sind verfügbar:
 
-* **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
-* **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
+* **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
+* **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
 * **[@aemforms/af-core](https://www.npmjs.com/package/@aemforms/af-core)**
 
-Alle diese Komponenten sind in AEM Archetyp enthalten. Wenn Sie ein AEM Archetyp 37 oder ein späteres Projekt für Headless adaptive Formulare erstellen, ist die neueste Version der oben aufgeführten Bibliotheken im Projekt enthalten.
+Alle diese Komponenten sind im AEM-Archetyp enthalten. Wenn Sie mit dem AEM-Archetyp 37 oder später ein Projekt für adaptive Headless-Formulare erstellen, ist die neueste Version der oben aufgeführten Bibliotheken im Projekt enthalten.
 
-**Started Application**: Adobe hat auch eine erste Anwendung veröffentlicht, die Ihnen dabei hilft, schnell mit Headless adaptiven Formularen zu beginnen.
+**Starter Application**: Adobe hat auch eine Anwendung für die ersten Schritte veröffentlicht, die Ihnen dabei hilft, schnell mit adaptiven Headless-Formularen zu beginnen.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
 Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. -->
 
-**Storybook**: [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) bietet einen Überblick über die verschiedenen Komponenten von Headless adaptiven Formularen. Sie enthält außerdem eine Liste aller unterstützten Komponenten, deren zugehörige Eigenschaften und Einschränkungen.
+**Storybook**: [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) bietet einen Überblick über verschiedene Komponenten von adaptiven Headless-Formularen. Außerdem wird eine Liste aller unterstützten Komponenten einschließlich ihrer Eigenschaften und Einschränkungen bereitgestellt.
 
-**Visual Studio Code-Erweiterung**: [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) um eine gültige JSON-Struktur zu erstellen. Es bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten einer JSON-Struktur.
+**Visual Studio Code-Erweiterung**: [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) zur Unterstützung beim Erstellen einer gültigen JSON-Struktur. Sie bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten in einer JSON-Struktur.
 
-**Adaptive Forms Version 2.0 - Spezifikationen**: Die Spezifikation der adaptiven Forms-Version 2.0 enthält detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die zur Definition von Headless-adaptiven Formularen verfügbar sind. Die Spezifikation ist verfügbar unter [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) Format.
+**Adaptive Formulare Version 2.0 – Spezifikation**: Die Spezifikation für adaptive Formulare Version 2.0 bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die zum Definieren adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf)-Format verfügbar.
 
-**HTTP- und JavaScript-APIs**: [HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) ermöglichen es Ihnen, den Sendestatus von Headless-Formularen aufzulisten, abzurufen, zu validieren, zu senden und zu verfolgen. [JS-APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) hilft Ihnen bei der Verwendung von Headless-adaptiven Formularen mit einem beliebigen JavaScript-basierten UI-Framework.
+**HTTP- und JavaScript-APIs**: [HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) ermöglichen Ihnen das Auflisten, Abrufen, Validieren, Senden und Verfolgen des Übermittlungsstatus von Headless-Formularen. [JS-APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helfen Ihnen, adaptive Headless-Formulare mit jedem JavaScript-basierten UI-Framework zu verwenden.
 
-**JSON-Formel**: Es handelt sich um eine Implementierung der Grammatik von Formularausdrücken, die Sie beim Abfragen der JSON-Struktur und beim Erstellen von Regeln für adaptive Formulare ohne Kopfzeilen unterstützt. Die Grammatik ist ein Mashup von tabellenähnlichen Funktionen und Operatoren und [JMESPath](https://jmespath.org/) eine JSON-Abfragesprache. Sie können die [Abspielplatz](https://opensource.adobe.com/json-formula/dist/index.html) , um die Syntax und Funktionen der JSON-Formel zu untersuchen.
+**JSON-Formel**: Hierbei handelt es sich um eine Implementierung der Grammatik von Formularausdrücken, die Sie beim Abfragen der JSON-Struktur und beim Erstellen von Regeln für adaptive Headless-Formulare unterstützt. Die Grammatik ist eine Mischung aus tabellenähnlichen Funktionen und Operatoren und [JMESPath](https://jmespath.org/), einer JSON-Abfragesprache. Sie können den [Spielplatz](https://opensource.adobe.com/json-formula/dist/index.html) nutzen, um die Syntax und Funktionen der JSON-Formeln auszuprobieren.

@@ -8,13 +8,13 @@ hide: true
 hidefromtoc: true
 exl-id: d0ca7389-9a7a-421e-ab6b-7845813d860e
 source-git-commit: f489a2ba818db44ccd92df80a177f0e9f3a1bc2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2479'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless Adaptives Forms auf AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
+# Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless Adaptive Formulare in AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
 ## Labor-Übersicht {#lab-overview}
 
@@ -32,15 +32,15 @@ Die Verwendung von AEM Forms zur einfachen Erstellung adaptiver Formulare mithil
 
 ## Voraussetzungen {#prerequisites}
 
-Gehen Sie wie folgt vor:
+Um dieses praktische Labor zu nutzen:
 
-* Installieren Sie die [neueste Version von Git](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Installieren von Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Installieren Sie die [neueste Git-Version](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installieren [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installieren von Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installationsanleitung für Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* [Aktivieren von Headless Adaptive Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) für Ihre as a Cloud Service AEM Forms-Umgebung.
+* [Aktivieren Sie adaptive Headless-Formulare](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) für Ihre AEM Forms as a Cloud Service-Umgebung
 
-* Installieren [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einem Texteditor. Beispiele im Dokument verwenden Microsoft Visual Studio Code.
+* Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. Die Beispiele im Dokument verwenden Microsoft Visual Studio Code.
 
 
 
@@ -59,9 +59,9 @@ In dieser Lektion lernen Sie die AEM Forms as a Cloud Service-Umgebung kennen, i
 1. Öffnen Sie den Browser und geben Sie die URL der Autorenumgebung von Cloud Service ein. Beispiel:
    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
 
-1. Melden Sie sich bei der Autorenumgebung von Cloud Service an.
+1. Melden Sie sich bei der Authoring-Umgebung von Cloud Service an.
 
-1. Um zur AEM Forms-Benutzeroberfläche zu navigieren, klicken Sie auf **Forms > Forms und Dokumente**.
+1. Klicken Sie auf **Formulare > Formulare und Dokumente**, um zur AEM Forms-Benutzeroberfläche zu navigieren, 
 
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
@@ -108,9 +108,9 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
       Feld **URL für die POST-Anfrage** an, wie unten gezeigt:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel für Ihr Formular an. Beispiel: **registrierung**. Klicken Sie auf **Erstellen**.
+   1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel für Ihr Formular an. Beispiel: **Registrierung**. Klicken Sie auf **Erstellen**.
 
-   1. Der Editor für adaptive Formulare wird geöffnet. Schließen Sie alle Popups oder Dialogfelder für Voreinstellungen oder Informationen. Klicken Sie in der linken Leiste auf den Komponenten-Browser und fügen Sie die **Kopfzeile** und **Fußzeile** Komponenten am oberen und unteren Rand des leeren Formulars.
+   1. Der Editor für adaptive Formulare wird geöffnet. Schließen Sie alle Popups oder Dialogfelder für Voreinstellungen oder Informationen. Klicken Sie in der linken Leiste auf den Komponenten-Browser und fügen Sie **Kopfzeilen-** und **Fußzeilen**-Komponenten oben und unten in das leere Formular ein.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser, um ein Formular ähnlich dem folgenden zu erstellen:
@@ -130,27 +130,27 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
 
-1. Vorschau erstellen und Formular senden.
+1. Zeigen Sie es in der Vorschau an und senden Sie es ab.
 
    1. Klicken Sie auf **Vorschau**, um eine Vorschau des Formulars aus der Perspektive von Endbenutzerinnen bzw. -benutzern anzuzeigen.
 
    1. Füllen Sie das Formular mit Platzhalterdaten aus.
 
-   1. Formular senden.
+   1. Senden Sie das Formular ab.
       ![](/help/assets/screenshot2028125729.png)
 
    1. Überprüfen Sie in der Registerkarte „Anfrage-Container“ die gesendeten Daten.
       ![](/help/assets/screenshot2028125829.png)
 
-1. Fügen Sie Interaktivität zum Formular mit Regeln hinzu:
+1. So fügen Sie dem Formular mit Regeln Interaktivität hinzu:
 
-   1. Klicken Sie auf **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten.** -Komponente. Klicken Sie in der Symbolleiste &quot;Optionen&quot;auf das Symbol Regeln . Die Option Regeleditor wird geöffnet.
+   1. Klicken Sie auf die Komponente **Aktivieren Sie das Konrollkästchen, um 5 % Rabatt zu erhalten**. Klicken Sie in der Optionsleiste auf das Regel-Symbol. Es öffnet sich die Regeleditor-Option.
 
-   1. Erstellen Sie eine Regel, wenn die **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten.** aktiviert ist, sind die Optionen für die Anwendung der Kreditkarte deaktiviert.
+   1. Erstellen Sie eine Regel. Wenn die Option **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten** aktiviert ist, sind die Kreditkartenoptionen deaktiviert.
 
-1. Formulare veröffentlichen.
+1. Veröffentlichen Sie das Formular.
 
-   1. Öffnen Sie beispielsweise die AEM Forms-Verwaltungsoberfläche. `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`und wählen Sie das Formular aus.
+   1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche, z. B. `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`, und wählen Sie das Formular aus.
 
    1. Klicken Sie auf **Veröffentlichen**.
 
@@ -379,7 +379,7 @@ Jetzt nehmen wir als Business-Anwenderin bzw. -Anwender Änderungen am Formular 
 
 1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser. Zum Beispiel [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
 
-1. Wählen Sie die **contactus** Formular und klicken Sie **Bearbeiten.** Das Formular wird im Editor für adaptive Formulare geöffnet.
+1. Öffnen Sie das Formular **Kontakt** und klicken Sie auf **Bearbeiten.** Das Formular wird im Editor für adaptive Formulare geöffnet.
 
 
 1. Wählen Sie das Feld **Telefonnummer** und klicken Sie auf das **Symbol „Bearbeiten“ (Bleistiftsymbol)** in der Symbolleiste. Wenn Sie die Popup-Symbolleiste nicht sehen können, wechseln Sie in den Bearbeitungsmodus, indem Sie auf die Schaltfläche **Bearbeiten** oben rechts, links von der Schaltfläche **Vorschau**, klicken.
