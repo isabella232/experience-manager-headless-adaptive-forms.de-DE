@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: Headless-CMS, adaptive Formulare, Headless-Benutzeroberfläche, Headful-CMS, Sprachassistenten, Alexa, Chatbots, WhatsApp-Architektur
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '400'
+source-git-commit: a88f2dab6fda61b674300e1d6a6c4f495ba85c97
+workflow-type: tm+mt
+source-wordcount: '353'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,9 @@ Alle Frontend-Entwicklerinnen und -Entwickler, die mit modernen JavaScript-Frame
 
 Es sind keine Vorkenntnisse von Adobe Experience Manager nötig, um adaptive Headless-Formulare zu entwickeln.
 
-## Wie kann man am Early-Adopter-Programm teilnehmen? {#how-to-join-early-adopter-forms}
+<!-- 
+## How to join the early adopter program? {#how-to-join-early-adopter-forms}
 
-Der Dienst ist für AEM Forms as a Cloud Service und AEM 6.5.16.0 Forms oder höher für langfristige On-Premise-Kunden und Adobe Managed Service-Unternehmenskunden verfügbar. Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) senden, um am Early-Adopter-Programm teilzunehmen.
+The service is available for AEM Forms as a Cloud Service and AEM 6.5.16.0 Forms or later On-Premise term customers and Adobe-Managed Service enterprise customers. Send an email to [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) from your official email ID to join the early adopter program. 
+
+-->
