@@ -5,10 +5,10 @@ description: In unserer Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie in 
 seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
 contentOwner: Khushwant Singh
 role: Admin
-exl-id: c5a7dee1-b177-4461-b9bd-af40ef59ad80
-source-git-commit: f489a2ba818db44ccd92df80a177f0e9f3a1bc2c
+exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: ht
-source-wordcount: '752'
+source-wordcount: '743'
 ht-degree: 100%
 
 ---
@@ -135,9 +135,9 @@ Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager
 ### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt?
 
 
-Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
-* Erstellen Sie auf Kernkomponenten basierende adaptive Formulare.
+* Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie benutzerdefinierte Vorlagen-Designs für adaptive Formulare auf Grundlage der Kernkomponenten.
 * Stellen Sie JSON-Darstellungen adaptiver Formulare auf Grundlage der Kernkomponenten für Kanäle wie Mobile, Web und native Apps und Dienste bereit, die eine Headless-Darstellung des Formulars erfordern.
