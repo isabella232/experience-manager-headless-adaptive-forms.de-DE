@@ -5,10 +5,10 @@ description: Erstellen ansprechender Formulare mithilfe von Kernkomponenten und 
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 428416d61f236396449d26df208bf284a1ad162f
+source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -84,9 +84,9 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 1. Erstellen Sie einen Übermittlungsendpunkt für das Formular:
 
    1. Öffnen Sie <https://requestbin.com/> in einer neuen Browser-Registerkarte.
+   1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
 1. Erstellen Sie ein adaptives Formular mithilfe der Assistenten-Oberfläche:
@@ -103,8 +103,7 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Klicken Sie auf die Registerkarte **Stil** und wählen Sie das Design **wknd-theme** wie unten gezeigt:
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Klicken Sie auf die Registerkarte **Übermitteln**, wählen Sie die Karte **An REST-Endpunkt übermitteln** und geben Sie den öffentlichen Ordner im
-      Feld **URL für die POST-Anfrage** an, wie unten gezeigt:
+   1. Klicken Sie auf **Einsendung** und wählen Sie die **An REST-Endpunkt übermitteln** und geben Sie den öffentlichen Ordner im **URL für die POST-Anforderung** wie unten gezeigt:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel für Ihr Formular an. Beispiel: **Registrierung**. Klicken Sie auf **Erstellen**.
@@ -115,10 +114,6 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser, um ein Formular ähnlich dem folgenden zu erstellen:
 
       ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
-
-
-
-
 
 1. Fügen Sie Validierungen zum Formular hinzu:
 
@@ -242,7 +237,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    >[!NOTE]
    >
-   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über den Befehl `npm notice Run npm nstall -g npm@9.6.0`zu aktualisieren, ignorieren Sie die Meldung.
+   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über die `npm notice Run npm nstall -g npm@9.6.0` -Befehl, ignorieren Sie die Nachricht.
    > * Führen Sie keine anderen npm-Befehle aus, es sei denn, Sie werden dazu in der Arbeitsmappe angewiesen.
 
 1. Führen Sie nun den folgenden Befehl aus, um eine Vorschau des Formulars anzuzeigen.
