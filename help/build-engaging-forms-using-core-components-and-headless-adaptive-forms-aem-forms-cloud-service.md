@@ -4,17 +4,15 @@ seo-title: Build Engaging Forms Using Core Components and Headless
 description: Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
-hide: true
-hidefromtoc: true
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 2332af82ea221086c3b014989651e34726040ba2
+source-git-commit: 428416d61f236396449d26df208bf284a1ad162f
 workflow-type: tm+mt
-source-wordcount: '2480'
-ht-degree: 99%
+source-wordcount: '2452'
+ht-degree: 96%
 
 ---
 
-# Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless Adaptive Formulare in AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
+# Erstellen von ansprechenden Formularen mit Kernkomponenten und adaptiven Headless-Formularen in AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
 ## Labor-Übersicht {#lab-overview}
 
@@ -36,7 +34,7 @@ Um dieses praktische Labor zu nutzen:
 
 * Installieren Sie die [neueste Git-Version](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installationsanleitung für Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installationsanleitung für Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
 * [Aktivieren der adaptiven Forms-Kernkomponenten](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) für Ihre as a Cloud Service AEM Forms-Umgebung.
 
@@ -60,10 +58,11 @@ In dieser Lektion lernen Sie die AEM Forms as a Cloud Service-Umgebung kennen, i
    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
 
 1. Melden Sie sich bei der Authoring-Umgebung von Cloud Service an.
+   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**, um zur AEM Forms-Benutzeroberfläche zu navigieren, 
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
@@ -225,6 +224,13 @@ Richten Sie ein lokales Repository des Designs ein:
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
+1. Erstellen Sie einen lokalen Benutzer in AEM Umgebung.
+
+   >[!NOTE]
+   > So erstellen Sie eine lokale Benutzerin oder einen lokalen Benutzer:
+   > Navigieren Sie zu `AEM Home` > `Tools` > `Security` > `Users`
+   > Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe &quot;forms-users&quot;ist.
+
 
 1. Führen Sie im Eingabeaufforderungsfenster den folgenden Befehl aus:
 
@@ -247,7 +253,10 @@ Richten Sie ein lokales Repository des Designs ein:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Warten Sie nach Ausführung des oben genannten Befehls auf die Nachricht `webpack compiled`. Das Formular wird auf einer Browser-Registerkarte angezeigt.
+   Warten Sie nach Ausführung des oben genannten Befehls auf die `webpack compiled` und Sie zu einer AEM Anmeldeseite weitergeleitet werden.
+
+1. Klicks **Lokale Anmeldung (nur Admin-Aufgaben)** auf der AEM Anmeldeseite.
+1. Geben Sie die Anmeldedaten für den erstellten lokalen Benutzer ein und das Formular wird auf einer Browser-Registerkarte angezeigt.
 
    >[!NOTE]
    >
