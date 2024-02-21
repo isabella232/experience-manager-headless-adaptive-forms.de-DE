@@ -5,10 +5,10 @@ user-guide-description: Dokumentation zu adaptiven Headless-Formularen von Adobe
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: b1e62aa73d5f442c8d025202f3bad31c0f82a113
-workflow-type: ht
-source-wordcount: '137'
-ht-degree: 100%
+source-git-commit: 6fbc8605163c5f5415cadf5c19c96e1f68a23841
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 # Adaptive Headless-Formulare von Adobe Experience Manager {#using}
 
 + [Übersicht](overview.md)
++ [Übersichtstests](overview-testing.md)
 + [Architektur](architecture.md)
 + Schnelleinrichtung {#quick-setup}
    + [Aktivieren von adaptiven Headless-Formularen in AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
